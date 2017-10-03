@@ -1,7 +1,7 @@
 $:.push File.expand_path('../lib', __FILE__)
 require 'macaddr/version'
 Gem::Specification::new do |spec|
-  spec.name = "macaddr-steakknife"
+  spec.name = "macaddr"
   spec.version = MacAddr::VERSION
   spec.platform = Gem::Platform::RUBY
   spec.summary = "macaddr"
@@ -25,4 +25,3 @@ Gem::Specification::new do |spec|
   spec.email = "ara.t.howard@gmail.com"
   spec.homepage = "https://github.com/steakknife/macaddr"
 end
-.tap {|gem| pk = File.expand_path(File.join('~/.keys', 'gem-private_key.pem')); gem.signing_key = pk if File.exist? pk; gem.cert_chain = ['gem-public_cert.pem']} # pressed firmly by waxseal
